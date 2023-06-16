@@ -21,8 +21,8 @@ You may also see any lint errors in the console.
 ## Turkish version
 # Create React Uygulamasına Başlarken
 
-github'dan klonladıktan sonra
-## git klon repo..link
+github'dan git klon yap 
+## git clone https://github.com/Mus-k/Frontend-Ui-Datagrid-Task.git
 
 Proje dizininde şunları çalıştırabilirsiniz:
 ## npm install
