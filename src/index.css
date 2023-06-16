@@ -1,0 +1,49 @@
+/* global css */
+
+:root {
+  --maincolor: #744bfc;
+  --dark: #000;
+  --white: #ffff;
+  --max-width: 1300px;
+}
+
+.app {
+  position: relative;
+}
+
+@media screen and (min-width: 1450px) {
+  table td,
+  table th {
+    padding: 7px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #000000;
+    font-size: 18px;
+  }
+  .app {
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .app {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .app {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px 0px;
+  }
+}

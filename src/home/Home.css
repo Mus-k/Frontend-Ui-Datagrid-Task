@@ -1,0 +1,285 @@
+/*buradaki css, home  dosyasi, GlobalFilter dosyasi
+ ve table dosyasi  olusmaktadir */
+
+.home {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  border-radius: 6px;
+  margin: 5px auto;
+  padding: 3px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    #eff2ff -30.56%,
+    rgba(232, 236, 255, 0) 135.85%
+  );
+}
+
+table {
+  border-collapse: collapse;
+  border-radius: 20px;
+}
+
+table td,
+table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: #000000;
+  font-size: 12px;
+}
+
+table th {
+  padding: 1px 0px;
+  background: var(--white);
+  font-weight: 500;
+}
+table tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.71);
+}
+
+/* icon */
+
+table th:nth-child(3) .fa-arrow-up,
+table th:nth-child(3) .fa-arrow-down {
+  display: none;
+}
+table th:nth-child(1) .fa-arrow-down {
+  display: none;
+}
+table th:nth-child(2) .fa-arrow-up {
+  display: none;
+}
+
+table th i {
+  float: right;
+}
+table th .fa-arrow-up {
+  color: var(--maincolor);
+}
+table th .fa-arrow-down {
+  color: var(--maincolor);
+}
+
+.bottom,
+.homeDiv {
+  width: 100%;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addBtn {
+  border: none;
+  background: var(--maincolor);
+  border-radius: 20px;
+  color: var(--white);
+  padding: 6px 9px;
+  cursor: pointer;
+}
+
+.seacrDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--maincolor);
+  border-radius: 12px;
+}
+input[type="search"] {
+  height: 30px;
+  border-radius: 10px 0px 0px 10px;
+  padding: 0px 8px;
+  border: none;
+}
+.search i {
+  color: var(--white);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.filter {
+  background-color: var(--white);
+  padding: 5px 6px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.filter i {
+  color: var(--maincolor);
+}
+
+.show {
+  color: var(--maincolor);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+input[type="number"] {
+  margin-left: 5px;
+  padding: 4px 7px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  border: 1px solid #ddd;
+}
+
+.right {
+  display: flex;
+  gap: 10px;
+}
+.col i {
+  color: var(--maincolor);
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.controlsBtns {
+  background-color: var(--white);
+  padding: 4px 6px;
+  border-radius: 7px;
+}
+.btnsColor {
+  color: var(--maincolor);
+}
+
+.gray {
+  color: gray;
+}
+
+/* Media query */
+@media screen and (min-width: 1440px) {
+  table td,
+  table th {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #000000;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home {
+    width: 90%;
+
+    border-radius: 6px;
+    margin: 20px auto;
+    padding: 20px 10px;
+  }
+  .homeDiv,
+  .bottom {
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .homeDiv {
+    padding: 10px 20px;
+    margin: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .seacrDiv {
+    margin: 5px 10px;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 15ch auto;
+    padding: 10px 15px;
+  }
+
+  td:last-child {
+    padding-bottom: 1rem;
+  }
+
+  td::before {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  td:nth-of-type(1)::before {
+    content: "Social Media Linki";
+  }
+  td:nth-of-type(2)::before {
+    content: "Social Media  Adı";
+  }
+  td:nth-of-type(3)::before {
+    content: "Açıklama";
+  }
+}
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  .show {
+    color: var(--maincolor);
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .home {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  table th {
+    padding: 0.5rem;
+  }
+  table th,
+  table td {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .seacrDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 80%;
+  }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--maincolor);
+    border-radius: 12px;
+  }
+  input[type="search"] {
+    height: 30px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0px 6px;
+    border: none;
+    outline: none;
+  }
+  .search i {
+    color: var(--white);
+    padding: 3px 6px;
+    cursor: pointer;
+  }
+  .filter {
+    background-color: var(--white);
+    padding: 2px 4px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .filter i {
+    color: var(--maincolor);
+  }
+}
