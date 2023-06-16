@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
-After cloning from github  
-## git clone repo..link
+clone repository 
+## git clone https://github.com/Mus-k/Frontend-Ui-Datagrid-Task.git
 
 In the project directory, you can run:
 ## npm install 
